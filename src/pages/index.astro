@@ -1,11 +1,97 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const residentialServices = [
+  {
+    title: "Roofing",
+    description: "Keep your home dry and looking great with our team of roofing experts.",
+    imageUrl: "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+    link: "/roofing",
+  },
+  {
+    title: "Siding & Gutters",
+    description: "Give your home a facelift with new siding that matches your design preference.",
+    imageUrl: "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+    link: "/siding-gutters",
+  },
+  {
+    title: "Windows & Doors",
+    description: "Upgrade your home with energy-efficient windows and doors.",
+    imageUrl: "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+    link: "/windows-doors",
+  },
+  {
+    title: "New Construction",
+    description: "Build your dream home with our team of experienced contractors.",
+    imageUrl: "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+    link: "/new-construction",
+  },
+];
+
+const commercialServices = [
+  {
+    title: "Roofing",
+    description: "Protect your business with our durable roofing solutions.",
+    imageUrl: "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+    link: "/commercial-roofing",
+  },
+  {
+    title: "Siding & Gutters",
+    description: "Enhance your commercial building's appearance and durability.",
+    imageUrl: "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+    link: "/commercial-siding-gutters",
+  },
+];
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+
+<BaseLayout>
+<!-- Hero Section -->
+<div
+  class="relative w-full h-[750px] bg-cover bg-center overflow-hidden"
+  style="background-image: url('https://www.homenish.com/wp-content/uploads/2021/09/grey-house-with-black-roof.jpg');"
+>
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+  <div class="relative flex flex-col items-center justify-center h-full text-center text-white z-10">
+    <h1 class="text-4xl font-bold mb-5">
+      Building a better future, one brick at a time.
+    </h1>
+    <a href="/contact" class="px-5 py-3 bg-gray-800 hover:bg-gray-700 text-white border-gray-100 rounded-lg transition duration-300">
+      Contact Us for a Consultation
+    </a>
+  </div>
+</div>
+
+<!-- Residential Services Section -->
+<section class="py-12 bg-gray-100">
+  <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Residential Services</h2>
+  <div class="flex flex-wrap justify-center gap-8">
+    {residentialServices.map((service) => (
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-xs transform transition-transform duration-300 hover:scale-105">
+        <img src={service.imageUrl} alt={service.title} class="w-full h-48 object-cover" />
+        <div class="p-5 text-center">
+          <h3 class="text-xl font-semibold text-grey-800 mb-3">{service.title}</h3>
+          <p class="text-gray-600 mb-5">{service.description}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+<!-- Commercial Services Section -->
+<section class="py-12 bg-gray-200">
+  <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Commercial Services</h2>
+  <div class="flex flex-wrap justify-center gap-8">
+    {commercialServices.map((service) => (
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-xs transform transition-transform duration-300 hover:scale-105">
+        <img src={service.imageUrl} alt={service.title} class="w-full h-48 object-cover" />
+        <div class="p-5 text-center">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">{service.title}</h3>
+          <p class="text-gray-600 mb-5">{service.description}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+  
+</BaseLayout>
