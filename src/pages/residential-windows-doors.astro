@@ -1,8 +1,12 @@
 
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
+import InfoPageLayout from '../layouts/InfoPageLayout.astro'
 ---
 
 <BaseLayout>
-  <h1> Windows & Doors </h1>
+  <InfoPageLayout>
+    <Fragment slot="pageTitle">Windows & Doors</Fragment>
+    <Fragment slot="pageDetails">We offer a wide range of windows and doors for your home.</Fragment>
+  </InfoPageLayout>
 </BaseLayout>
