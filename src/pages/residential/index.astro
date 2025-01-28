@@ -1,19 +1,19 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro'
-import InfoPageLayout from '../layouts/InfoPageLayout.astro'
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import InfoPageLayout from '../../layouts/InfoPageLayout.astro'
+import contentImage from '../../assets/mansion.jpg'
 ---
 
 <BaseLayout>
   <InfoPageLayout>
-    <Fragment slot="pageTag">Comercial Landing Here is a decnetly large amount of information about the service to title that page</Fragment>
+    <Fragment slot="pageTag">Residential Work Here is a decnetly large amount of information about the service to title that page</Fragment>
     <Fragment slot="pageDetails">
       Lorem ipsum dolor sit amet consectetur adipiscing, elit tortor phasellus nam ridiculus risus mus, sociis nascetur montes ut erat. Tempor 
       aliquet parturient molestie litora risus rhoncus imperdiet natoque, nascetur dictum curabitur potenti sodales commodo vulputate magna, orci 
       aenean donec lacinia magnis nunc hac. Netus convallis quam dui nullam eget tincidunt sodales, maecenas nunc posuere dignissim aenean sapien,
     </Fragment>
-    <img slot="heroImage"  src="https://i1.wp.com/gelatologia.com/wp-content/uploads/2020/07/placeholder.png" alt="Windows and doors" />
+    <img slot="heroImage"  src={contentImage.src} alt="Windows and doors" />
     <Fragment slot="contentTitle">All Services We Offer for Residnetial</Fragment>
 
   </InfoPageLayout>
 </BaseLayout>
-
