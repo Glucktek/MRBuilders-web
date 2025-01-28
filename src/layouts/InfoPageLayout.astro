@@ -2,9 +2,9 @@
 
 ---
 <!-- Section Hero Areaa -->
-<section class="flex h-3/5 bg-white mt-10 shadow">
+<section class="flex flex-col md:flex-row h-auto md:h-3/5 bg-white mt-10 shadow">
   <!-- Left Side: Text and Button -->
-  <div class="w-1/2 flex flex-col items-start p-10 mt-10">
+  <div class="w-full md:w-1/2 flex flex-col items-start p-4 md:p-10 mt-4 md:mt-10">
     <h1 class="text-5xl font-bold text-gray-700 mb-4">
       <slot name="pageTag" />
     </h1>
@@ -15,17 +15,17 @@
   </div>
 
   <!-- Right Side: Hero Image -->
-  <div class="w-1/2 h-full p-8">
-    <div class="w-full h-full rounded-tl-[200px] rounded-br-[200px] shadow-xl overflow-hidden">
+  <div class="w-full md:w-1/2 h-full p-4 md:p-8 mt-4 md:mt-0">
+    <div class="w-full h-64 md:h-full md:rounded-tl-[200px] md:rounded-br-[200px] sm:rounded-tl-[80px] sm:rounded-br-[80px] shadow-xl overflow-hidden">
       <slot name="heroImage" />
     </div>
   </div>
 </section>
 
 <!-- Content Cards -->
-<section class="bg-gray-100 py-10">
+<section class="bg-gray-100 py-6 md:py-10">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
       <div>
         <h2 class="text-2xl font-bold text-gray-800">
           <slot name="contentTitle" />
