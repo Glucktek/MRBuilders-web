@@ -3,16 +3,43 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 ---
 
 <BaseLayout>
-  <div class="container mx-auto px-5 py-10">
-    <h1 class="text-4xl font-bold mb-5">About Us</h1>
-    <p class="mb-5">
-      At Home Renovations, we are dedicated to providing the highest quality home improvement services to our clients. Our team of experienced contractors is committed to delivering exceptional results on every project, whether it's a small repair or a complete renovation. We take pride in our work and strive to exceed our clients' expectations with every job we do.
-    </p>
-    <p class="mb-5">
-      With years of experience in the industry, we have the knowledge and expertise to handle a wide range of home improvement projects. From roofing and siding to windows and doors, we offer a comprehensive range of services to meet all of your needs. Our team is dedicated to providing superior craftsmanship and exceptional customer service, ensuring that you are completely satisfied with the results of your project.
-    </p>
-    <p class="mb-5">
-      Whether you're looking to update your home's exterior or build your dream home from the ground up, Home Renovations has you covered. Contact us today to learn more about our services and schedule a consultation with our team.
-    </p>
-  </div>
+    <div class="flex flex-col items-center px-4 md:px-10 lg:px-20">
+        <section class="w-full max-w-4xl my-8 flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/2 m-8 md:mb-0">
+                <h1 class="text-3xl font-bold text-gray-800 mb-4">About Us</h1>
+                <p class="text-gray-600">Welcome to the story of Murl and Rita Davis, a husband-and-wife team with over 40 years of unwavering dedication to the world of general contracting. What began as a shared dream has grown into a legacy of craftsmanship, integrity, and a heartfelt commitment to building not just structures but relationships within our community.</p>
+            </div>
+            <div class="w-full md:w-1/2 mr:4">
+                <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Placeholder image" class="rounded shadow-lg">
+            </div>
+        </section>
+
+        <section class="w-full max-w-4xl my-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-3">Our Journey</h2>
+            <p class="text-gray-600 mb-4">In 1983, Murl and Rita set out to combine their unique talents and shared passion for construction. With Murl’s sharp eye for design and meticulous attention to detail, and Rita’s unmatched organizational skills and client-focused approach, they built their first home together—a project that laid the foundation for a career defined by excellence.</p>
+            <p class="text-gray-600">Over the decades, Murl and Rita have expanded their expertise to include everything from custom home construction to large-scale renovations and commercial projects. Whether it’s a cozy family residence or a state-of-the-art office space, their work reflects an unwavering commitment to quality and innovation.</p>
+        </section>
+
+        <section class="w-full max-w-4xl my-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-3">Our Philosophy</h2>
+            <p class="text-gray-600 mb-4">At the heart of Murl and Rita’s business is a simple but powerful belief: every project is personal. They understand that construction isn’t just about bricks and beams; it’s about creating spaces where memories are made, dreams are realized, and lives are lived to the fullest.</p>
+            <p class="text-gray-600">That’s why Murl and Rita take the time to truly listen to their clients, ensuring that every detail aligns with their vision. Their hands-on approach and dedication to clear communication mean that every client becomes a partner in the process, and every project is a collaboration.</p>
+        </section>
+
+        <section class="w-full max-w-4xl my-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-3">Why Choose Us</h2>
+            <ul class="list-disc list-inside text-gray-600">
+                <li class="mb-2"><strong>Experience That Matters:</strong> With over four decades of experience, Murl and Rita have seen it all and built it all. Their expertise ensures that every project is handled with professionalism and precision.</li>
+                <li class="mb-2"><strong>A Reputation for Excellence:</strong> Known for their honesty, reliability, and top-notch craftsmanship, Murl and Rita have earned the trust of countless clients over the years.</li>
+                <li><strong>Community-Centered Values:</strong> As proud members of the community, Murl and Rita are dedicated to giving back, creating jobs, and fostering growth through their work.</li>
+            </ul>
+        </section>
+
+        <section class="w-full max-w-4xl my-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-3">Looking to the Future</h2>
+            <p class="text-gray-600 mb-4">Even after 40 years, Murl and Rita’s passion for their craft hasn’t wavered. They continue to embrace new technologies, materials, and trends to ensure that their work remains at the cutting edge of the industry. But one thing remains constant: their dedication to delivering the very best to their clients.</p>
+            <p class="text-gray-600 mb-4">Whether you’re building from the ground up, dreaming of a renovation, or embarking on a commercial venture, Murl and Rita Davis are here to bring your vision to life with expertise, care, and a personal touch.</p>
+            <p class="text-gray-600">Let’s build something incredible together.</p>
+        </section>
+    </div>
 </BaseLayout>
