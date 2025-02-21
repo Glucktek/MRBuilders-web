@@ -1,0 +1,39 @@
+---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: mr-builders-web
+  namespace: default
+  labels:
+    app: mr-builders-web
+spec:
+  replicas: 1
+  progressDeadlineSeconds: 600
+  revisionHistoryLimit: 2
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: mr-builders-web
+  template:
+    metadata:
+      labels:
+        app: mr-builders-web
+    spec:
+      containers:
+        - name: mr-builders-web
+          image: nginx:latest
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mr-builders-web
+  namespace: default
+spec:
+  selector:
+    app: mr-builders-web
+  ports:
+    - name: http
+      targetPort: 80
+      port: 80
