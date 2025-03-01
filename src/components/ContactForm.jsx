@@ -28,7 +28,7 @@ const ContactForm = () => {
               </li>
               <li className="flex items-center justify-center lg:justify-start">
                 <i className="fas fa-phone-alt mr-2"></i>
-                <span>(502)494-0521</span>
+                <span>(502) 445-6451</span>
               </li>
             </ul>
           </div>

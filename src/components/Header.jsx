@@ -85,10 +85,10 @@ const Header = () => {
       {/* Contact Button */}
       <div>
         <a
-          href="tel:5024940521"
+          href="tel:5024456451"
           className="text-lg bg-gray-800 hover:bg-white hover:text-gray-800 text-white font-bold px-4 py-2 rounded transition duration-300"
         >
-          <i className="fas fa-phone-alt mr-2"></i> (502) 494-0521
+          <i className="fas fa-phone-alt mr-2"></i> (502) 445-6451
         </a>
       </div>
     </header>
