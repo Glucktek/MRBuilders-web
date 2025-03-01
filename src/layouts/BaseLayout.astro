@@ -1,5 +1,6 @@
 ---
 import Header from '../components/Header.jsx';
+import MobileMenu from '../components/MobileMenu.jsx';
 import Footer from '../components/Footer.astro';
 ---
 
@@ -16,6 +17,7 @@ import Footer from '../components/Footer.astro';
 	</head>
 	<body class="flex flex-col min-h-screen">
     <Header client:only="react" />
+    <MobileMenu client:only="react" />
     <main class="flex-grow">
       <slot />
     </main>

@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: mr-builders-web
-          image: agluck91/mr-builder:0.0.2
+          image: agluck91/mr-builder:0.1.5
 
 ---
 apiVersion: v1

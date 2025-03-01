@@ -28,7 +28,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="flex items-center shadow-lg shadow-gray-500 justify-between p-4 h-28 bg-white text-gray-800 font-sans relative">
+    <header className="items-center shadow-lg shadow-gray-500 justify-between p-4 h-28 bg-white text-gray-800 font-sans relative hidden lg:flex">
       {/* Logo / Site Name */}
       <div>
         <a href="/">
@@ -85,10 +85,10 @@ const Header = () => {
       {/* Contact Button */}
       <div>
         <a
-          href="tel:5555555555"
+          href="tel:5024940521"
           className="text-lg bg-gray-800 hover:bg-white hover:text-gray-800 text-white font-bold px-4 py-2 rounded transition duration-300"
         >
-          <i className="fas fa-phone-alt mr-2"></i> (555) 555-5555
+          <i className="fas fa-phone-alt mr-2"></i> (502) 494-0521
         </a>
       </div>
     </header>
