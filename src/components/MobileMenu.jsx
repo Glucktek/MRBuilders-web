@@ -97,9 +97,9 @@ const MobileSidebar = () => {
       >
         <div className="flex flex-col h-full">
           {/* Logo */}
-          <div className="p-4 border-b border-gray-200">
+          <div className="p-4 border-b border-gray-200 flex justify-center items-center">
             <a href="/">
-              <img src={logo.src} alt="MR Builders" className="h-16 w-auto" />
+              <img src={logo.src} alt="MR Builders" className="h-32 w-auto" />
             </a>
           </div>
 
@@ -112,7 +112,7 @@ const MobileSidebar = () => {
                     <div>
                       <button
                         onClick={() => toggleSubmenu(index)}
-                        className="w-full flex items-center justify-between text-gray-800 font-bold hover:text-gray-600 transition-colors"
+                        className="w-full flex items-center justify-between text-gray-800 font-bold hover:text-gray-600 transition-colors text-xl"
                       >
                         <span>{item.name}</span>
                         <svg
@@ -139,7 +139,7 @@ const MobileSidebar = () => {
                           <a
                             key={childIndex}
                             href={child.href}
-                            className="block py-1 text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded px-2 transition-colors"
+                            className="block py-1 text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded px-2 transition-colors text-xl"
                           >
                             {child.name}
                           </a>
@@ -149,7 +149,7 @@ const MobileSidebar = () => {
                   ) : (
                     <a
                       href={item.href}
-                      className="block text-gray-800 font-bold hover:text-gray-600 transition-colors"
+                      className="block text-gray-800 font-bold hover:text-gray-600 transition-colors text-xl"
                     >
                       {item.name}
                     </a>
