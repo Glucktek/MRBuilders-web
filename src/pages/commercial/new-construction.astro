@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import InfoPageLayout from '../../layouts/InfoPageLayout.astro'
+import contentImage from '../../assets/Commercial-New.jpg';
 ---
 
 <BaseLayout>
@@ -11,7 +12,6 @@ import InfoPageLayout from '../../layouts/InfoPageLayout.astro'
       aliquet parturient molestie litora risus rhoncus imperdiet natoque, nascetur dictum curabitur potenti sodales commodo vulputate magna, orci 
       aenean donec lacinia magnis nunc hac. Netus convallis quam dui nullam eget tincidunt sodales, maecenas nunc posuere dignissim aenean sapien,
     </Fragment>
-    <img slot="heroImage" src="https://i1.wp.com/gelatologia.com/wp-content/uploads/2020/07/placeholder.png" alt="Windows and doors" />
-    <Fragment slot="contentTitle">Content Title</Fragment>
+    <img slot="heroImage" src={contentImage.src} alt="Windows and doors" />
   </InfoPageLayout>
 </BaseLayout>

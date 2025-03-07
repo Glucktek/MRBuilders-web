@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import InfoPageLayout from '../../layouts/InfoPageLayout.astro'
+import contentImage from '../../assets/Commercial-Renovations.jpg';
 ---
 
 <BaseLayout>
@@ -11,7 +12,6 @@ import InfoPageLayout from '../../layouts/InfoPageLayout.astro'
       aliquet parturient molestie litora risus rhoncus imperdiet natoque, nascetur dictum curabitur potenti sodales commodo vulputate magna, orci 
       aenean donec lacinia magnis nunc hac. Netus convallis quam dui nullam eget tincidunt sodales, maecenas nunc posuere dignissim aenean sapien,
     </Fragment>
-    <img slot="heroImage" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcontentgrid.homedepot-static.com%2Fhdus%2Fen_US%2FDTCCOMNEW%2FArticles%2FTHD-Pro-House-Framing-Guide-5-WF-2997323.jpg&f=1&nofb=1&ipt=247c4161c1a3aed4a427c13cdcc02f40551c440935f6ddb5008ab24a6943858f&ipo=images" alt="Windows and doors" />
-    <Fragment slot="contentTitle">Content Title</Fragment>
+    <img slot="heroImage" src={contentImage.src} alt="Windows and doors" />
   </InfoPageLayout>
 </BaseLayout>
