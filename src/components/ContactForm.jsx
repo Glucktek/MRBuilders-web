@@ -28,7 +28,7 @@ const ContactForm = () => {
           {/* Right Section */}
           <div className="p-8 sm:p-12">
             <form name="contact" method="POST" netlify>
-              <input type="hidden" name="contact" value="contact" />
+              <input type="hidden" name="form-name" value="contact" />
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label
