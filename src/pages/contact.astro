@@ -1,8 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
-import ContactForm from '../components/ContactForm.jsx'
+import ContactForm from '../components/ContactForm.astro'
 ---
 
 <BaseLayout>
-  <ContactForm client:only="react" />
+  <ContactForm />
 </BaseLayout>
