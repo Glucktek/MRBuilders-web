@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
+import contentImage from '../assets/mr.png'
 ---
 
 <BaseLayout>
@@ -9,8 +10,8 @@ import BaseLayout from '../layouts/BaseLayout.astro'
                 <h1 class="text-3xl font-bold text-gray-800 mb-4">About Us</h1>
                 <p class="text-gray-600">Welcome to the story of Murl and Rita Davis, a husband-and-wife team with over 40 years of unwavering dedication to the world of general contracting. What began as a shared dream has grown into a legacy of craftsmanship, integrity, and a heartfelt commitment to building not just structures but relationships within our community.</p>
             </div>
-            <div class="w-full md:w-1/2 mr:4">
-                <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Placeholder image" class="rounded shadow-lg">
+        <div class="w-full md:w-1/2 mr:4">
+              <img src={contentImage.src} alt="Image of Murl and Rita" class="rounded-full shadow-xl">
             </div>
         </section>
 
