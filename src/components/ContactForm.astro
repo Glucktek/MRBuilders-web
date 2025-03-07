@@ -25,9 +25,16 @@
         </ul>
       </div>
       <div class="p-8 sm:p-12">
-        <form name="contact" method="POST" netlify>
+        <form name="contact" method="POST" netlify-honeypot="custom-names" netlify>
           <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
+            <label>
+              Don’t fill this out if you're human: <input name="custom-names" />
+            </label>
+          </p>
+
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
             <div>
               <label
                 for="firstName"
@@ -37,6 +44,7 @@
               </label>
               <input
                 type="text"
+                name="firstName"
                 id="firstName"
                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200"
                 placeholder="First Name"
@@ -51,6 +59,7 @@
               </label>
               <input
                 type="text"
+                name="lastName"
                 id="lastName"
                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200"
                 placeholder="Last Name"
@@ -66,6 +75,7 @@
             </label>
             <input
               type="email"
+              name="email"
               id="email"
               class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200"
               placeholder="you@example.com"
@@ -80,6 +90,7 @@
             </label>
             <textarea
               id="message"
+              name="message"
               rows="4"
               class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200"
               placeholder="Tell us about your project..."
