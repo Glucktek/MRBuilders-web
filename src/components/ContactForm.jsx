@@ -1,13 +1,6 @@
 import React, { useState } from "react";
 
 const ContactForm = () => {
-  const [showError, setShowError] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setShowError(true);
-  };
-
   return (
     <div className="bg-gray-50 py-16 px-6 md:px-24 lg:px-24">
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-2xl overflow-hidden">
@@ -34,7 +27,7 @@ const ContactForm = () => {
           </div>
           {/* Right Section */}
           <div className="p-8 sm:p-12">
-            <form onSubmit={handleSubmit} netlify>
+            <form name="contact" netlify>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label
@@ -93,26 +86,11 @@ const ContactForm = () => {
                   placeholder="Tell us about your project..."
                 ></textarea>
               </div>
-              <div
-                className="g-recaptcha"
-                data-sitekey="6Lfk3RcUAAAAAFUgz7T-iBEajOn3I_PaJSOVSUk2"
-              ></div>
-
-              {/* Error message */}
-              {showError && (
-                <div className="mt-4 p-3 bg-red-50 border border-red-200 rounded-md">
-                  <p className="text-red-600 font-medium text-center">
-                    Online contact form currently down. Please call us, or send
-                    us an email at info@mr-builders.com. Sorry for the
-                    inconvenience.
-                  </p>
-                </div>
-              )}
 
               <div className="mt-6">
                 <button
                   type="submit"
-                  className="w-full bg-blue-800 text-white py-2 px-4 rounded-md shadow-md hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300"
+                  className="w-full bg-gray-800 text-white py-2 px-4 rounded-md shadow-md hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300"
                 >
                   Send Message
                 </button>
