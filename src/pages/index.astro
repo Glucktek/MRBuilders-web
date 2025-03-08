@@ -1,30 +1,37 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import roof from '../assets/roof.jpg';
+import siding from '../assets/siding-gutter.jpg';
+import windows from '../assets/windows.jpg';
+import newConstruction from '../assets/new.jpg';
+import cRoof from '../assets/commercial-roof.jpg';
+import cReno from '../assets/Commercial-Renovations.jpg';
+import cNew from '../assets/Commercial-New.jpg';
 
 const residentialServices = [
   {
     title: "Roofing",
     description: "Keep your home dry and looking great with our team of roofing experts.",
-    imageUrl: "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
-    link: "/roofing",
+    imageUrl: roof,
+    link: "/residential/roofing",
   },
   {
     title: "Siding & Gutters",
-    description: "Give your home a facelift with new siding that matches your design preference.",
-    imageUrl: "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
-    link: "/siding-gutters",
+    description: "Give your home a facelift with new siding that matches your style.",
+    imageUrl: siding,
+    link: "/residential/siding-gutters",
   },
   {
     title: "Windows & Doors",
     description: "Upgrade your home with energy-efficient windows and doors.",
-    imageUrl: "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
-    link: "/windows-doors",
+    imageUrl: windows, 
+    link: "/residential/windows-doors",
   },
   {
     title: "New Construction",
     description: "Build your dream home with our team of experienced contractors.",
-    imageUrl: "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
-    link: "/new-construction",
+    imageUrl: newConstruction,
+    link: "/residential/new-construction",
   },
 ];
 
@@ -32,14 +39,20 @@ const commercialServices = [
   {
     title: "Roofing",
     description: "Protect your business with our durable roofing solutions.",
-    imageUrl: "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
-    link: "/commercial-roofing",
+    imageUrl: cRoof, 
+    link: "/commercial/roofing",
   },
   {
-    title: "Siding & Gutters",
-    description: "Enhance your commercial building's appearance and durability.",
-    imageUrl: "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
-    link: "/commercial-siding-gutters",
+    title: "Renovations",
+    description: "Reimagine your commercial space with our renovation services.",
+    imageUrl: cReno,
+    link: "/commercial/renovations",
+  },
+  {
+    title: "New Construction",
+    description: "Starting a new business from the ground up? We can help.",
+    imageUrl: cNew,
+    link: "/commercial/new-construction",
   },
 ];
 ---
@@ -59,6 +72,9 @@ const commercialServices = [
     <a href="/contact" class="px-5 py-3 bg-gray-800 hover:bg-gray-700 text-white border-gray-100 rounded-lg transition duration-300">
       Contact Us for a Consultation
     </a>
+    <a href="tel:+5024456451" class="px-5 py-3 bg-gray-800 hover:bg-gray-700 text-white border-gray-100 rounded-lg transition duration-300 mt-2 lg:hidden">
+     <i class="fas fa-phone-alt mr-2"></i> (502) 445-6451
+    </a>
   </div>
 </div>
 
@@ -67,13 +83,15 @@ const commercialServices = [
   <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Residential Services</h2>
   <div class="flex flex-wrap justify-center gap-8">
     {residentialServices.map((service) => (
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-xs transform transition-transform duration-300 hover:scale-105">
-        <img src={service.imageUrl} alt={service.title} class="w-full h-48 object-cover" />
-        <div class="p-5 text-center">
-          <h3 class="text-xl font-semibold text-grey-800 mb-3">{service.title}</h3>
-          <p class="text-gray-600 mb-5">{service.description}</p>
+      <a href={service.link}>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-xs transform transition-transform duration-300 hover:scale-105">
+          <img src={service.imageUrl.src} alt={service.title} class="w-full h-48 object-cover" />
+          <div class="p-5 text-center">
+            <h3 class="text-xl font-semibold text-grey-800 mb-3">{service.title}</h3>
+            <p class="text-gray-600 mb-5">{service.description}</p>
+          </div>
         </div>
-      </div>
+      </a>
     ))}
   </div>
 </section>
@@ -83,13 +101,15 @@ const commercialServices = [
   <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Commercial Services</h2>
   <div class="flex flex-wrap justify-center gap-8">
     {commercialServices.map((service) => (
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-xs transform transition-transform duration-300 hover:scale-105">
-        <img src={service.imageUrl} alt={service.title} class="w-full h-48 object-cover" />
-        <div class="p-5 text-center">
-          <h3 class="text-xl font-semibold text-gray-800 mb-3">{service.title}</h3>
-          <p class="text-gray-600 mb-5">{service.description}</p>
+      <a href={service.link}>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-xs transform transition-transform duration-300 hover:scale-105">
+          <img src={service.imageUrl.src} alt={service.title} class="w-full h-48 object-cover" />
+          <div class="p-5 text-center">
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">{service.title}</h3>
+            <p class="text-gray-600 mb-5">{service.description}</p>
+          </div>
         </div>
-      </div>
+      </a>
     ))}
   </div>
 </section>

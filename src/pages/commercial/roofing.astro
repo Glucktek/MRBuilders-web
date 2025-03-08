@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import InfoPageLayout from '../../layouts/InfoPageLayout.astro'
+
+import contentImage from '../../assets/commercial-roof.jpg';
 ---
 
 <BaseLayout>
@@ -13,7 +15,6 @@ import InfoPageLayout from '../../layouts/InfoPageLayout.astro'
       property needs a roof that is reliable and built to last. Whether you're looking to install 
       a brand-new roof, need a timely repair, or require ongoing maintenance, we have the expertise and tools to meet your needs.
     </Fragment>
-    <img slot="heroImage" src="https://i1.wp.com/gelatologia.com/wp-content/uploads/2020/07/placeholder.png" alt="Windows and doors" />
-    <Fragment slot="contentTitle">Content Title</Fragment>
+    <img slot="heroImage" src={contentImage.src} alt="Windows and doors" />
   </InfoPageLayout>
 </BaseLayout>
