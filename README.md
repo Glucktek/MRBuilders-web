@@ -1,50 +1,87 @@
-# Astro Starter Kit: Basics
+# MRBuilders-web
 
-```sh
-npm create astro@latest -- --template basics
+Client Website for a Construction Business.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d5a922a3-42ca-44e5-8b5f-9c264490b279/deploy-status)](https://app.netlify.com/sites/mr-builders/deploys)
+
+## Table of Contents
+
+- [About the Project](#about-the-project)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the Project](#running-the-project)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## About the Project
+
+MRBuilders-web is the client-facing website for a construction business. This project is designed to provide an online presence for the business, showcasing services, projects, and contact information.
+
+## Tech Stack
+
+The project is built using the following technologies:
+
+- **Astro** (72.5%)
+- **JavaScript** (26.8%)
+- **Docker** (0.7%)
+
+Astro is used for building static websites, ensuring fast performance and easy scalability. JavaScript is used to enhance interactivity, and a Dockerfile is included for containerization.
+
+## Getting Started
+
+To get a local copy of the project up and running, follow these steps.
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (version 16.x or higher)
+- [npm](https://www.npmjs.com/)
+- [Docker](https://www.docker.com/) (optional, for containerization)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Glucktek/MRBuilders-web.git
+   cd MRBuilders-web
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+   or, if you're using Yarn:
+
+   ```bash
+   yarn install
+   ```
+
+### Running the Project
+
+To start the development server:
+
+```bash
+npm run dev
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+or, with Yarn:
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+yarn dev
 ```
 
-    			usePlaceholders = true,
+The project will be accessible at `http://localhost:3000`.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Project Structure
 
-## 🧞 Commands
+The key folders in this repository are:
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- `src/`: Contains the source code for the website.
+- `public/`: Contains static assets like images, icons, and other files.
