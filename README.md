@@ -1,7 +1,7 @@
-# MRBuilders-web
+# MRBuilders-web [![Netlify Status](https://api.netlify.com/api/v1/badges/d5a922a3-42ca-44e5-8b5f-9c264490b279/deploy-status)](https://app.netlify.com/sites/mr-builders/deploys)
 
 Client Website for a Construction Business.
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d5a922a3-42ca-44e5-8b5f-9c264490b279/deploy-status)](https://app.netlify.com/sites/mr-builders/deploys)
+
 
 ## Table of Contents
 
